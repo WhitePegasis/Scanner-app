@@ -76,7 +76,7 @@ function Imagescanner() {
     return (
         <div className="container">
             <div>
-                <h2>Image to Text Converter</h2>
+                <h2>Image to Text</h2>
                 <p>Select an image and click "Convert" to extract text.</p>
             </div>
             <div>
@@ -91,8 +91,8 @@ function Imagescanner() {
                     />
                 )}
             </div>
-            <button onClick={handleImageToText} disabled={!image}>
-                {isLoading ? 'Loading...' : 'Convert Image to Text'}
+            <button className='imagescanner-button' onClick={handleImageToText} disabled={!image}>
+                {isLoading ? 'Loading...' : 'Extract Text'}
             </button>
             <div>
                 <p>{text}</p>
