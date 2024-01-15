@@ -76,8 +76,8 @@ function Imagescanner() {
     return (
         <div className="container">
             <div>
-                <h2>Image to Text</h2>
-                <p>Select an image and click "Convert" to extract text.</p>
+                <h2>Tesseract.js</h2>
+                <p>Select an image and click "Extract text"</p>
             </div>
             <div>
                 <input type="file" onChange={handleChange} />

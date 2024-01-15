@@ -12,6 +12,11 @@
     text-align: center;
     align-items: center;
   }
+
+  .result-text {
+    word-wrap: break-word; /* Prevent horizontal overflow by breaking words */
+    max-width: 350px;
+  }
   
   h2 {
     color: #333;

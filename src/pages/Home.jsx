@@ -24,7 +24,10 @@ const Home = () => {
           <button className='home-buttons'>QR Scanner</button>
         </Link>
         <Link to="/component2" className="scanner-button">
-          <button className='home-buttons'>Image Scanner</button>
+          <button className='home-buttons'>Image Scanner1</button>
+        </Link>
+        <Link to="/component3" className="scanner-button">
+          <button className='home-buttons'>Image Scanner2</button>
         </Link>
       </div>
     </div>
