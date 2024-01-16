@@ -50,6 +50,17 @@ const OCRComponent = () => {
       <div>
         <input type="file" onChange={handleImageUpload} />
       </div>
+
+      <div>
+        {selectedImage && (
+          <img
+            src={URL.createObjectURL(selectedImage)}
+            alt="Selected"
+            style={{ maxWidth: '100%', marginTop: '10px' }}
+          />
+        )}
+      </div>
+
       <button className='imagescanner-button' disabled={isLoading || !selectedImage} onClick={handleExtractText}>
         {isLoading ? 'Loading...' : 'Extract Text'}
       </button>
